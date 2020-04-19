@@ -53,5 +53,51 @@ $('#slide-left').click(function() {
     }, 50);
     
 })
+window.addEventListener("scroll",function(){
+    var st=document.body.scrollTop||document.documentElement.scrollTop;
+    if(st >=100){
+        $("#nav").css({
+           " opacity":"0",
+           " transition": "all .5s",
+            "display":"none"
+        })
+    }else{
+        $("#nav").css({
+            " opacity":"1",
+            " transition": "all .5s",
+             "display":"block"
+         })
+    }
+})
+$("#p-nav div").on("mousemove",function(){
+    $(this).css({
+       "background-color":"red"
+       
+     })
+})
+$("#p-nav div").on("mouseout",function(){
+    $(this).css({
+       "background-color":""
+     })
+})
+
+var muns=0
+setInterval(function(){
+    
+  if(muns ==0){
+    $("h5 span").css({
+        "background-color":"orange",
+        "color":"white"
+        
+    })
+    muns =1
+  }else{
+    $("h5 span").css({
+        "background-color":"",
+        "color":"orange"
+    })
+    muns =0 
+  }
+},300)
 
 }())

@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    cursor: pointer;
 }
 ul,li {
     list-style: none;
@@ -76,7 +77,7 @@ h3{
     color: white;
     margin-top: 30px;
     cursor: pointer;
-   
+  
 }
 #title-box{
    
@@ -195,12 +196,13 @@ position: relative;
     z-index: -4;
 }
 #cz-box .cz-boxs{
-    height: 200px;
+    height: 175px;
     width: 256.55px;
     flex-grow:1;
     cursor: pointer;
     padding: 20px;
     box-sizing: border-box;
+    transition: all 1s;
 }
 main{
     border: transparent 2px solid;
@@ -236,6 +238,12 @@ main p{
     color: gray;
    font-size: 14px;
 
+}
+#cz-box .cz-boxs:hover{
+    
+    transform: rotate(360deg);
+
+    transform-origin: 50% 50%;
 }
 #serve-box{
     padding-top: 30px;
@@ -305,11 +313,12 @@ main p{
     padding-top: 20px;
     box-sizing: border-box;
     width: 85%;
-    height: 630px;
+    height: 700px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    overflow: hidden;
     overflow: hidden;
 }
 #anli-boxs{
@@ -394,8 +403,9 @@ h5{
     font-size: 16px;
 }
 h5 span{
-    font-size: 10px;
+    font-size:12px;
 margin-left: 20px;
+color: orange;
 }
 #sev-boxs p{
       font-size: 15px;
@@ -558,7 +568,7 @@ button span{
  background-color: black;
     height: 250px;
     opacity: .7;
-    top: 400px;
+    top: 250px;
     right: 5px;
 }
 #nav-p{
