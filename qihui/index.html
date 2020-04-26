@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <div id="top-btn" class="hide">回到顶部</div>
+    <!-- 第一部分 -->
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a class="dropdown-toggle" data-toggle="dropdown" href="#">手机站<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <img src="http://static.qihuiwang.com/images/oneCode.jpg" alt="">
+                                <span class="sjz">手机站</span>
+                            </li>
+                            <hr>
+                            <li>
+                                <img src="http://static.qihuiwang.com/images/xiaochengxu.jpg" alt="">
+                                <span class="sjz">小程序</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">欢迎来到企汇网</a></li>
+                    <li><a href="login.html" target="_blank">
+                            <span class="glyphicon glyphicon-user"></span> 登录</a></li>
+                    <li><a href="register.html" target="_blank">注册</a></li>
+                </ul>
+
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">企汇网首页</a></li>
+                    <li>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">收藏夹<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">收藏的商品</a></li>
+                            <li><a href="#">收藏的店铺</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">我是采购商<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">采购商中心</a></li>
+                            <li><a href="#">发布的采购单</a></li>
+                            <li><a href="#">采购管理</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">我是供应商<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">供应商中心</a></li>
+                            <li><a href="#">发布产品</a></li>
+                            <li><a href="#">产品管理</a></li>
+                            <li><a href="#">店铺管理</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">企汇管家</a></li>
+                    <li>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">企汇服务<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+
+                            <li><a href="#">第三项</a></li>
+                            <li><a href="#">第四项</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">客服中心<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">第一项</a></li>
+                            <li><a href="#">第二项</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">网站导航<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">第一项</a></li>
+                            <li><a href="#">第二项</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- 搜索框 -->
+    <div class="box">
+
+        <img src="1.png" alt="" style="margin-left:80px;line-height: 80;margin-bottom: 20px;">
+        <img src="2.png" alt="" style="margin-bottom: 20px;">
+        <section style="display: inline-block;margin-top: 20px;">
+
+            <div class="input-group">
+                <span class="input-group-addon" data-toggle="dropdown" style="padding-top: 10px;padding-bottom:8px ;">产品
+
+                </span>
+
+                <input type="text" class="form-control" placeholder="">
+                <span class="input-group-addon" style="padding-top: 10px;padding-bottom:8px ;">搜索</span>
+
+            </div>
+        </section>
+        <span class="input-group-addon"
+            style="display: inline-block;width: 116px; padding-top: 10px;padding-bottom:8px ;margin-left: 30px;margin-bottom: 27px;">采购发布单</span>
+        <img src="http://static.qihuiwang.com/images/Appdown.jpg" alt="" style="position: absolute;right: 80px;">
+
+    </div>
+    <!-- 所有分类 -->
+    <div id="flBox">
+        <div id="flBox-left">
+            <span class="glyphicon glyphicon-list"
+                style="line-height: 60px;margin-left: 10px;font-size: 22px; color: white;">
+                所有分类
+            </span>
+        </div>
+        <div id="flBox-right">
+            <span>采购中心</span>
+            <span>爱采购</span>
+            <span>小程序</span>
+            <span>活动汇</span>
+            <span>资讯</span>
+            <span>展会</span>
+            <span>郑州站</span>
+            <span>平顶山站</span>
+            <span>企汇管家</span>
+            <span>企汇云信</span>
+        </div>
+    </div>
+    <!-- header -->
+    <header>
+        <div class="hea_div2">
+            <ul>
+                <li>机械/设备/模具</li>
+                <li>农作物/花卉/禽畜</li>
+                <li>建筑/建材/五金</li>
+                <li>能源/矿产/石油</li>
+                <li>电工/电气/配电</li>
+                <li>饰品/礼品/工艺品</li>
+                <li>汽车/保养/维修</li>
+                <li>交通运输/配件</li>
+                <li>物流/运输/货运</li>
+                <li>网站/广告/服务</li>
+            </ul>
+        </div>
+        <div id="lunbotu">
+
+            <!-- 轮播图 -->
+            <span class="prev"></span>
+            <span class="next"></span>
+            <!-- 图片 -->
+            <ul class="imgBox">
+                <li class="active"><img src="http://image.qihuiwang.com/BA/F/443/BA0F869BB7226FD5FA89136FB3FF1E08.jpg"
+                        alt=""></li>
+                <li><img src="http://image.qihuiwang.com/B1/0/525/B1F04460D84D96687D6BBBE45C40E94D.jpg" alt=""></li>
+                <li><img src="http://image.qihuiwang.com/7C/8/919/7C58EFF97B07E2394C75AADBC6A74C1D.jpg" alt=""></li>
+                <li><img src="http://image.qihuiwang.com/11/2/698/11D2166BA7E68CF8ECFEF6051060BEC7.jpg" alt=""></li>
+                <li><img src="http://image.qihuiwang.com/96/D/854/968D2235606C69E6CE921696C6EEBC0E.jpg" alt=""></li>
+            </ul>
+            <ul class="tabBox">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+        </div>
+        <div id="login">
+
+        </div>
+        <div id="gon">
+            <div id="d1" class="d1">
+                <img src="http://image.qihuiwang.com/90/E/261/90AED19059A4AA05121B2F83A2272733.jpg" alt="">
+                <span>清洗清理设备</span><br>
+                <a href="">超声波清理机</a>
+            </div>
+            <div id="d2" class="d1">
+                <img src="http://image.qihuiwang.com/9A/0/952/9AD0037B83EC60FC260D5DC4164A5F04.jpg" alt="">
+                <span>保温材料</span><br>
+                <a href="">聚苯板</a>
+            </div>
+            <div id="d3" class="d1">
+                <img src="http://image.qihuiwang.com/0D/8/161/0D384C8A1545005B912868815C598A7A.jpg" alt="">
+                <span>多功能果园管理机</span><br>
+                <a href="">开沟施肥机</a>
+            </div>
+            <div id="d4" class="d1">
+                <img src="http://image.qihuiwang.com/94/6/265/94B600509B5697B9F27E7F0482225B64.jpg" alt="">
+                <span>广告牌</span><br>
+                <a href="">垃圾分类亭</a>
+            </div>
+        </div>
+        <div id="zhexiantu">
+
+        </div>
+    </header>
+    <!-- 特色 -->
+    <div id="tese">
+        <div id="tese-left" class="tese">
+            <span style="font-size: 28px;"><span style="color: tomato;font-size: 28px;">特色</span>服务</span>
+            <hr>
+            <div>
+                <div class="wen">
+                    <span>企汇金铺</span>
+                    <span>|</span>
+                    <span>金铺装修</span>
+                    <span>|</span>
+                    <span>短信套餐</span>
+                    <span>|</span>
+                    <span>企汇软文通</span>
+                    <span>|</span>
+                    <span>标王</span>
+                </div>
+                <div class="wen">
+                    <span>黄金展位</span>
+                    <span>|</span>
+                    <span>企汇管家</span>
+                    <span>|</span>
+                    <span>企汇管家白银版</span>
+                    <span>|</span>
+                    <span>企汇管家黄金版</span>
+                    <span>|</span>
+                    <span>小程序</span>
+                </div>
+
+            </div>
+        </div>
+        <div id="tese-right" class="tese">
+            <span style="font-size: 28px;"><span style="color: tomato;font-size: 28px;">品牌</span>供应商</span>
+            <hr>
+            <div>
+                <div class="wen">
+                    <span>郑州经济开发区</span>
+                    <span>|</span>
+                    <span>惠州市弘祥防水工程有限公司</span>
+                    <span>|</span>
+                    <span>招远鲁鑫线轴有限公司</span>
+
+                </div>
+                <div class="wen">
+                    <span>惠州市华春龙实业有限公司</span>
+                    <span>|</span>
+                    <span>曲卓六九重工机械制造有限公司</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="gug1">
+        <img src="http://image.qihuiwang.com/86/C/401/86EC60991608962012C944BECF1C32DA.jpg" alt="">
+    </div>
+    <!-- 1楼 -->
+    <h4>1F机械设备</h4>
+    <div id="first-floor">
+        <!-- 1111 -->
+        <div id="first-floor1">
+            <h2>机械设备专场</h2>
+            <span>制造好货,共享优品</span><br>
+            <button>点击进入</button>
+        </div>
+        <!-- 2222 -->
+        <div id="first-floor2">
+            <div style="width: 100%;height: 33.3%;">
+                <div style="display: inline-block;width: 48%;height: 100%;margin-left: 5px">
+                    <h3>排风设备</h3>
+                    <span>石墨</span>
+                    <span>玻璃钢管</span>
+                    <span>控制系统</span>
+                    <span>化工设备配件</span>
+                </div>
+                <div style="display: inline-block;width: 48%;height: 100%;">
+                    <h3>化工机械</h3>
+                    <span>石墨</span>
+                    <span>玻璃钢管</span>
+                    <span>控制系统</span>
+                    <span>化工设备配件</span>
+                </div>
+            </div>
+
+            <div style="width: 100%;height: 33.3%;">
+                <div style="display: inline-block;width: 48%;height: 100%;margin-left: 5px">
+                    <h3>排风设备</h3>
+                    <span>石墨</span>
+                    <span>玻璃钢管</span>
+                    <span>控制系统</span>
+                    <span>化工设备配件</span>
+                </div>
+                <div style="display: inline-block;width: 48%;height: 100%;">
+                    <h3>化工机械</h3>
+                    <span>石墨</span>
+                    <span>玻璃钢管</span>
+                    <span>控制系统</span>
+                    <span>化工设备配件</span>
+                </div>
+            </div>
+            <div style="width: 100%;height: 33.3%;">
+                <div style="display: inline-block;width: 48%;height: 100%;margin-left: 5px;">
+                    <h3>排风设备</h3>
+                    <span>石墨</span>
+                    <span>玻璃钢管</span>
+                    <span>控制系统</span>
+                    <span>化工设备配件</span>
+                </div>
+                <div style="display: inline-block;width: 48%;height: 100%;">
+                    <h3>化工机械</h3>
+                    <span>石墨</span>
+                    <span>玻璃钢管</span>
+                    <span>控制系统</span>
+                    <span>化工设备配件</span>
+                </div>
+            </div>
+        </div>
+        <div id="first-floor3">
+            <div id="first-floor3s">
+                <div style="border-right: rgb(212, 212, 212) 1px solid;margin: 0;">
+                    <span>地面整平机</span><br>
+                    <span>整平机</span>
+                    <img src="http://image.qihuiwang.com/9E/A/1001/9E9A4C7E97582F9E3A1F4B6F6776A940.jpg" alt="">
+                </div>
+                <div>
+                    <span>
+                        泡沫造粒机
+                    </span><br>
+                    <span>
+                        造粒机
+                    </span>
+                    <img src="http://image.qihuiwang.com/37/6/565/377699235C25F6281042B97F490026CD.jpg" alt="">
+                </div>
+            </div>
+            <div id="first-floor3x">
+                <span>螺旋提升机</span>
+                <br><span>提升机</span>
+                <img src="http://image.qihuiwang.com/F7/0/229/F710924E5233126D2F7860DDCC3FEFE9.jpg" alt="">
+            </div>
+        </div>
+        <div id="first-floor4"></div>
+    </div>
+    <!-- 展会信息 -->
+    <div id="xxy">
+        <div id="xxy-l" class="xxy">
+            <div>
+                <strong>展会信息</strong>
+                <span>更多</span>
+            </div>
+
+        </div>
+        <div id="xxy-z" class="xxy">
+            <div>
+                <strong>展会信息</strong>
+                <span>更多</span>
+            </div>
+
+        </div>
+        <div id="xxy-r" class="xxy">
+            <div>
+                <strong>展会信息</strong>
+                <span>更多</span>
+            </div>
+
+        </div>
+    </div>
+    <!-- 友情链接 -->
+    <div id="yqlj">
+        <p>友情链接</p>
+        <hr style="width: 95%;margin-top: 0;"><br>
+        <a href="">电子商务平台</a>
+        <a href="">外贸圈</a>
+        <a href="">塑料门户网</a>
+        <a href="">供求信息</a>
+        <a href="">金属价格网</a>
+        <a href="">室内装修</a>
+        <a href="">装饰装修知识</a>
+        <a href="">再生塑料网</a>
+        <a href="">云同盟</a>
+        <a href="">化工产品网</a>
+        <a href="">加盟网</a>
+        <a href="">建筑网</a>
+        <a href="">买卖机械网</a>
+        <a href="">中国水泥网</a>
+        <br>
+        <a href="">第一枪资讯</a>
+        <a href="">背景分类信息</a>
+        <a href="">智慧网</a>
+        <a href="">B2B平台</a>
+        <a href="">企业谷</a>
+        <a href="">代理记账</a>
+        <a href="">大拇指商务网</a>
+        <a href="">仪表展览网</a>
+        <a href="">商标查询</a>
+        <a href="">起重</a>
+        <a href="">中国农业信息网</a>
+        <a href="">中国机械设备信息网</a>
+        <a href="">网商网</a>
+        <a href="">家居建材网</a>
+
+        <br>
+        <a href="">花木网</a>
+        <a href="">泉贝网络</a>
+        <a href="">中国贸易网</a>
+        <a href="">五金商机网</a>
+        <a href="">全球五金网</a>
+        <a href="">东方供应商</a>
+        <a href="">悉知</a>
+        <a href="">企业库大全</a>
+        <a href="">产品库</a>
+        <a href="">天助网</a>
+        <a href="">马可波罗</a>
+        <a href="">志趣网</a>
+        <a href="">久久信息网</a>
+        <a href="">产品地图</a>
+    </div>
+    <!-- 页尾 -->
+    <div id="yewei">
+        <div id="yewei-logo">
+            <img src="http://static.qihuiwang.com/images/footerLogo.png" alt="">
+            <h2>400-6677-369</h2>
+            <p>周一至周五9:00-18:00</p>
+        </div>
+        <div class="da">
+            <div class="qi">
+                <div>
+                    <strong>车型</strong><br>
+                    <span
+                        style="border-bottom: rgb(255, 255, 255) 1px solid;display: inline-block;width: 100px;margin-bottom: 3px;"></span>
+                    <p>轿车</p>
+                    <p>SUV</p>
+                    <p>轿跑车和敞篷跑车</p>
+                    <p>MPV</p>
+                    <p>纯电动车</p>
+                    <p>车型总览</p>
+                    <p>认证二手车</p>
+                </div>
+                <div>
+                    <strong>购车指南</strong><br>
+                    <span
+                        style="border-bottom: rgb(255, 255, 255) 1px solid;display: inline-block;width: 100px;margin-bottom: 3px;"></span>
+                    <p>限时购车新方案</p>
+                    <p>查找经销商</p>
+                    <p>金融计算器</p>
+                    <p>预约试驾</p>
+                    <p>在线购车</p>
+                    <p>下载产品手册</p>
+                </div>
+                <div>
+                    <strong>客户服务</strong><br>
+                    <span
+                        style="border-bottom: rgb(255, 255, 255) 1px solid;display: inline-block;width: 100px;margin-bottom: 3px;"></span>
+                    <p>星徽保养菜单</p>
+                    <p>原厂修养套餐家族</p>
+                    <p>手机端服务体验</p>
+                    <p>选装配件及精品</p>
+                    <p>原厂配件</p>
+                    <p>事故与保险服务</p>
+                </div>
+            </div>
+
+        </div>
+        <div id="ma">
+            <h3>移动企汇网</h3>
+            <span>手机企汇网：m.qihuiwang.com</span>
+            <div style="display: inline-block;width: 46%;">
+                <img src="http://static.qihuiwang.com/images/oneCode.jpg" alt=""
+                    style="width: 100px;margin-top: 20px;margin-bottom: 20px;">
+                <p>企汇网手机站</p>
+            </div>
+            <div style="display: inline-block;width: 46%;">
+                <img src="http://static.qihuiwang.com/images/twoCode.jpg" alt=""
+                    style="width: 100px;margin-top: 20px;margin-bottom: 20px;">
+                <p>企汇网微信</p>
+            </div>
+        </div>
+        <div id="hang">
+            <span>按字母分类：</span>
+            <span>A</span><span>|</span>
+            <span>B</span><span>|</span>
+            <span>C</span><span>|</span>
+            <span>D</span><span>|</span>
+            <span>E</span><span>|</span>
+            <span>F</span><span>|</span>
+            <span>G</span><span>|</span>
+            <span>H</span><span>|</span>
+            <span>I</span><span>|</span>
+            <span>J</span><span>|</span>
+            <span>K</span><span>|</span>
+            <span>L</span><span>|</span>
+            <span>M</span><span>|</span>
+            <span>N</span><span>|</span>
+            <span>O</span><span>|</span>
+            <span>P</span><span>|</span>
+            <span>Q</span><span>|</span>
+            <span>R</span><span>|</span>
+            <span>S</span><span>|</span>
+            <span>T</span><span>|</span>
+            <span>U</span><span>|</span>
+            <span>V</span><span>|</span>
+            <span>W</span><span>|</span>
+            <span>X</span><span>|</span>
+            <span>Y</span><span>|</span>
+            <span>Z</span><span>|</span>
+            <span>0-9</span>
+            <!-- <hr > -->
+        </div>
+
+        <div id="hang2" style="padding-bottom: 20px;">
+            <span>网站首页</span><span>|</span>
+            <span>联系我们</span><span>|</span>
+            <span>使用协议</span><span>|</span>
+            <span>版权隐私</span><span>|</span>
+            <span>产品资讯</span><span>|</span>
+            <span>产品动态</span><span>|</span>
+            <span>维权通道</span><span>|</span>
+            <span>网站导航</span><span>|</span>
+            <span>用户反馈</span>
+            <span>在线客服</span>
+            <span>关注我们</span>
+
+        </div>
+        <div id="hang3">
+
+            <span>Copyright&nbsp;2008-2018&nbsp;河南企汇网信息技术股份有限公司&nbsp;&nbsp;保留所有权利&nbsp;&nbsp;&nbsp;经营许可证编号：豫B2-20140075&nbsp;豫公网安备&nbsp;41019702002055号</span>
+        </div>
+    </div>
+    <!-- 百度搜索 -->
+    <div id="text-box" style="width: 1353px;">
+        <img src="http://static.qihuiwang.com/images/logoSmall.gif" alt="" style="margin-right: 120px;">
+        <input type="text" id="search-field">
+        <div id="search-btn">搜索</div>
+        <span style="margin-left: 100px;">400服务电话：400-6677-369</span>
+    </div>
+    <!-- 准备一个div专门用来占text-box脱离文档流的位置 -->
+    <div id="plane-holder-box"></div>
+</body>
+<script src="bs/js/jquery.min.js"></script>
+<script src="bs/js/bootstrap.min.js"></script>
+<script src="lunbo.js"></script>
+<script src="xiaoguo.js"></script>
+
+</html>

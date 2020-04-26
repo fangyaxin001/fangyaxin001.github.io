@@ -1,0 +1,644 @@
+body {
+    margin: 0;
+}
+ /* 导航栏+搜索框 */
+nav {
+    width: 1353px;
+    padding-right: 20px;
+}
+
+.navbar {
+    background-color: #cccccc;
+}
+
+.input-group {
+    width: 500px;
+}
+
+.box {
+    width: 1353px;
+    height: 80px;
+    position: relative;
+}
+
+/* 所有分类 */
+#flBox {
+    width: 1193px;
+    height: 60px;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+#flBox-left {
+    display: inline-block;
+    width: 19.2%;
+    height: 100%;
+    background-color: rgb(240, 76, 76);
+}
+
+#flBox-right {
+    display: inline-block;
+    width: 80%;
+
+}
+
+#flBox-right span {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+/* header */
+header {
+    margin: 0 auto;
+    width: 1193px;
+    height: 460px;
+    margin-left: 80px;
+    background-color: rgb(204, 197, 197);
+    position: relative;
+}
+
+.hea_div2 {
+    width: 190px;
+    height: 460px;
+    background-size: 100% 100%;
+    display: inline-block;
+
+}
+
+.hea_div2>ul {
+    width: 229px;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    padding-top: 20px;
+    box-sizing: border-box;
+
+
+}
+
+.hea_div2>ul>li {
+    list-style: none;
+    line-height: 42px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    position: relative;
+    color: white;
+}
+
+.hea_div2>ul>li:hover {
+    background-color: orangered;
+}
+
+.hea_div2>ul>li>span {
+    position: absolute;
+    top: 0;
+    right: 15px;
+}
+
+/* 轮播图 */
+
+#lunbotu {
+    width: 680px;
+    height: 240px;
+    display: inline-block;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.imgBox img {
+    width: 680px;
+    height: 240px;
+}
+
+ul {
+    list-style: none;
+}
+
+.imgBox {
+    background-color: rgb(85, 50, 50);
+}
+
+.bannerBox {
+    background-color: red;
+    width: 680px;
+    height: 240px;
+    position: relative;
+}
+
+.imgBox li {
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.tabBox {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.tabBox li {
+    border: solid 2px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    margin: 0 auto;
+    margin-right: 6px;
+}
+
+.imgBox li.active {
+    opacity: 1;
+}
+
+.tabBox li.current {
+    border-color: #ffffff;
+    background-color: #ffffff;
+    box-shadow: 0 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* 未知 */
+#gon {
+    width: 680px;
+    height: 200px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    margin-left: 50px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+#d1 {
+    width: 24.5%;
+    height: 100%;
+}
+
+#d2 {
+    width: 24.5%;
+    height: 100%;
+}
+
+#d3 {
+    width: 24.5%;
+    height: 100%;
+}
+
+#d4 {
+    width: 24.5%;
+    height: 100%;
+}
+
+.d1 {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+#gon img {
+    width: 150px;
+    height: 140px;
+    margin-left: 9px;
+    margin-top: 9px;
+    text-align: center;
+}
+
+#login {
+    width: 250px;
+    height: 240px;
+    display: inline-block;
+    position: absolute;
+    margin-top: 10px;
+    right: 10px;
+    background-color: rgb(231, 98, 98);
+}
+
+#zhexiantu {
+    width: 250px;
+    height: 200px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+/* 特色 */
+#tese {
+    width: 1193px;
+    height: 200px;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.tese {
+    display: inline-block;
+    margin-top: 10px;
+    border: 2px solid rgb(212, 212, 212);
+    border-radius: 6px;
+}
+
+#tese-left {
+    width: 48%;
+    height: 180px;
+    background-color: #fff;
+    margin-right: 5px;
+    margin-left: 24px;
+    line-height: 40px;
+
+}
+
+#tese-right {
+    width: 48%;
+    height: 180px;
+    background-color: #fff;
+    margin-left: 11px;
+    line-height: 40px;
+
+}
+
+.xian {
+    width: 70%;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+hr {
+    width: 70%;
+    display: inline-block;
+}
+
+#tese-left span {
+    display: inline-block;
+    margin-left: 12px;
+    padding-top: 10px;
+}
+
+#tese-right span {
+    display: inline-block;
+    margin-left: 12px;
+    padding-top: 10px;
+}
+
+#tese-right hr {
+    width: 65%;
+    display: inline-block;
+}
+
+.wen span {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+}
+
+#gug1 {
+    padding-top: 10px;
+    margin-left: 5.6%;
+}
+
+/* 一楼 */
+h4 {
+    margin-left: 5%;
+}
+
+#first-floor {
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 400px;
+    background-color: rgb(140, 255, 165);
+    position: relative;
+}
+
+#first-floor1 {
+    width: 18.5%;
+    height: 100%;
+    background-color: rgb(219, 255, 161);
+    background-image: url(http://image.qihuiwang.com/05/7/779/05D7B1F0BAA8707BBB3D7DC67CFC086F.jpg);
+    padding-left: 30px;
+    padding-top: 40px;
+    display: inline-block;
+    position: absolute;
+}
+
+#first-floor2 {
+    left: 18.5%;
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    border: 1px solid rgb(194, 194, 194);
+}
+
+h3 {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+#first-floor2 span {
+    padding-left: 20px;
+}
+
+#first-floor3 {
+    display: inline-block;
+    left: 58.5%;
+    width: 20.75%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+
+    border: 1px solid rgb(194, 194, 194);
+}
+
+#first-floor4 {
+    display: inline-block;
+    left: 78.75%;
+    width: 21.25%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(194, 194, 194);
+}
+
+#first-floor3s {
+    width: 100%;
+    height: 45%;
+    text-align: center;
+    padding-top: 10px;
+    border-bottom: 1px solid rgb(168, 168, 168);
+}
+
+#first-floor3s div:nth-child(1) {
+    width: 49%;
+    height: 100%;
+    display: inline-block;
+}
+
+#first-floor3s div:nth-child(2) {
+    width: 49%;
+    height: 100%;
+    display: inline-block;
+}
+
+#first-floor3s img {
+    width: 90%;
+    height: 75%;
+
+}
+
+#first-floor3x {
+    width: 100%;
+    height: 55%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#first-floor3x img {
+    width: 90%;
+    height: 75%;
+}
+
+/* 展会信息 */
+#xxy {
+    width: 90%;
+    height: 400px;
+    margin-left: 5%;
+    margin-top: 30px;
+    position: relative;
+}
+
+.xxy {
+    display: inline-block;
+}
+
+#xxy-l {
+    width: 30%;
+    height: 100%;
+    background-color: #fff;
+    border: rgb(197, 197, 197) 1px solid;
+    position: absolute;
+    left: 0;
+}
+
+#xxy-l div {
+    width: 100%;
+    height: 20%;
+    border-bottom: rgb(197, 197, 197) 1px solid;
+}
+
+#xxy-z {
+    width: 30%;
+    height: 100%;
+    background-color: #fff;
+    margin: 0 56px;
+    border: rgb(197, 197, 197)1px solid;
+    position: absolute;
+    left: 30%;
+}
+
+#xxy-z div {
+    width: 100%;
+    height: 20%;
+    border-bottom: rgb(197, 197, 197) 1px solid;
+}
+
+#xxy-r {
+    width: 30%;
+    height: 100%;
+    background-color: #fff;
+    border: rgb(197, 197, 197) 1px solid;
+    position: absolute;
+    right: 0;
+}
+
+#xxy-r div {
+    width: 100%;
+    height: 20%;
+    border-bottom: rgb(197, 197, 197) 1px solid;
+}
+
+#xxy span {
+    position: absolute;
+    right: 30px;
+    line-height: 80px;
+}
+
+#xxy strong {
+    position: absolute;
+    left: 30px;
+    line-height: 80px;
+}
+
+/* 友情链接 */
+#yqlj {
+    width: 1353px;
+    height: 200px;
+    background-color: rgb(221, 221, 221);
+    padding-top: 20px;
+    padding-left: 80px;
+    margin-top: 30px;
+}
+
+#yqlj p {
+    font-size: 20px;
+    font-style: 300;
+}
+
+#yqlj a {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+/* 页尾 */
+#yewei {
+    width: 1353px;
+    height: 500px;
+    background-color: rgb(27, 27, 27);
+    position: relative;
+}
+
+#yewei-logo {
+    margin-left: 50px;
+    width: 280px;
+    height: 250px;
+    top: 0;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#yewei-logo img {
+    width: 240px;
+
+}
+
+.da {
+    width: 800px;
+    height: 300px;
+    margin-top: 40px;
+    position: absolute;
+    top: 0;
+    left: 280px;
+    display: inline-block;
+
+}
+
+.qi {
+    width: 800px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+
+}
+
+#ma {
+    width: 270px;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* 行 */
+#hang {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 300px;
+    text-align: center;
+}
+
+#hang span:nth-child(1) {
+    width: 100px;
+}
+
+#hang span {
+    display: inline-block;
+    width: 16px;
+    line-height: 60px;
+}
+
+#hang2 {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: 360px;
+    text-align: center;
+}
+
+#hang3 {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    top: 420px;
+    text-align: center;
+}
+
+#hang2 span {
+    display: inline-block;
+    font-size: 10px;
+    width: 50px;
+    line-height: 60px;
+}
+
+#hang3 span {
+    display: inline-block;
+    font-size: 10px;
+    line-height: 60px;
+}
+
+/* 隐藏搜索框 */
+#text-box {
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-field {
+    width: 500px;
+    height: 40px;
+    font-size: 20px;
+    padding-left: 10px;
+    border: 2px solid rgb(219, 34, 66);
+}
+
+#search-btn {
+    display: inline-block;
+    height: 40px;
+    width: 100px;
+    background-color: rgb(219, 34, 66);
+    line-height: 44px;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+}
+
+/* 固定位置 */
+.fixed {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 10px 0 black;
+}
+
+/* 回到顶部 */
+#top-btn {
+    text-align: center;
+    width: 20px;
+    background-color: rgb(200, 200, 200);
+    position: fixed;
+    right: 0;
+    bottom: 120px;
+    cursor: pointer;
+    z-index: 8;
+}
