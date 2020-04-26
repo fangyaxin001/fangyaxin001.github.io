@@ -35,7 +35,7 @@ $('#slide-right').click(function() {
     };
 
     $('#slide').stop().animate({
-        left: -i * 1000
+        left: -i * 55+"em"
     }, 50); 
 })
 
@@ -45,11 +45,11 @@ $('#slide-left').click(function() {
     if (i == -1) {
         i = $('#slide li').length - 1;
         $('#slide').css({
-            left: -($('#slide li').length -1) * 1000
+            left: -($('#slide li').length -1) * 55+"em"
         });
     }
     $('#slide').stop().animate({
-        left: -i * 1000
+        left: -i * 55+"em"
     }, 50);
     
 })
@@ -101,3 +101,29 @@ setInterval(function(){
 },300)
 
 }())
+$("#xilie-boxs #img-d1").css({
+    "background-color":"black",
+    "opacity": 0
+})
+
+function move(d1){
+    d1.on("mousemove",function(){
+        $(this).css({
+            "opacity":.5 
+        })
+        })
+}
+
+function out(d1){
+    d1.on("mouseout",function(){
+        $(this).css({
+            "opacity":0
+        })
+        })
+}
+    move($("#xilie-boxs #img-d1"))
+    out($("#xilie-boxs #img-d1"))
+    move($("#anli-box #img-d2"))
+    out($("#anli-box #img-d2"))
+    move($("#sev-box #img-d3"))
+    out($("#sev-box #img-d3"))
