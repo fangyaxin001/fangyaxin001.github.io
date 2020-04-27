@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html {
+            font-size: 13.334vw;
+        }
+
+        #nav {
+            /* border: 1px solid black; */
+            width: 100%;
+            height: 0.8rem;
+            display: flex;
+        }
+
+        #p1 {
+            width: 1rem;
+            height: 0.8rem;
+            line-height: 0.8rem;
+            font-size: 0.41rem;
+            color: red;
+        }
+
+        #p2 {
+            width: 0.5rem;
+            height: 0.8rem;
+            color: red;
+            line-height: 0.8rem;
+            font-size: 0.41rem;
+        }
+
+        input {
+            width: 4rem;
+            height: 0.5rem;
+            border: 0;
+            background-color: silver;
+            border-radius: 18px;
+            outline: none;
+            margin-top: 0.1rem;
+            ;
+        }
+
+        .user {
+            background-image: url(int1.png);
+
+            background-size: 0.4rem 0.45rem;
+
+            background-position: 3px 100%;
+
+            background-repeat: no-repeat;
+
+            padding: 8px 10px 8px 0.5rem;
+
+        }
+
+        #nav div {
+            margin-top: 0.1rem;
+            margin-left: 0.2rem;
+            width: 0.6rem;
+            height: 0.6rem;
+        }
+
+        #g1 img {
+            width: 0.6rem;
+            height: 0.6rem;
+        }
+
+        #g2 img {
+            width: 0.6rem;
+            height: 0.6rem;
+        }
+
+        #test1 img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #ing {
+            width: 7.5rem;
+            height: 4rem;
+        }
+
+        #secend {
+            margin-top: 0.1rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 7.47rem;
+            height: 2.6rem;
+        }
+
+        #secend div {
+            width: 1.5rem;
+            height: 1.5rem;
+
+            text-align: center;
+        }
+
+        #secend img {
+
+            width: 1.2rem;
+            height: 1.2rem;
+        }
+
+        #secend p {
+            width: 1.5rem;
+            font-size: 0.3rem;
+            text-align: center;
+        }
+
+        #left {
+            width: 3.66rem;
+            height: 3.5rem;
+            border-right: 1px solid gray;
+            padding: 0.2rem;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        #p11 {
+            font-size: 0.4rem;
+            color: red;
+        }
+
+        #p12 {
+            font-size: 0.35rem;
+            margin-top: 0.1rem;
+            color: gray;
+        }
+
+        #left img {
+            margin-top: 0.2rem;
+            width: 3.4rem;
+            height: 1.8rem;
+        }
+
+        #right {
+            width: 3.7rem;
+            height: 3.5rem;
+            float: right;
+        }
+
+        #right div {
+            width: 3.73rem;
+            height: 1.75rem;
+        }
+
+        #top {
+            border-bottom: solid 1px gray;
+        }
+
+        #top img {
+            width: 1.4rem;
+            height: 1.65rem;
+            float: left;
+        }
+        #btm img{
+            margin-top: 0.1rem;
+            width: 1.6rem;
+            height: 1.55rem;
+            float: left;
+        }
+        #p21{
+            font-size: 0.4rem;
+            color: red;
+        }
+        #p22{
+            font-size: 0.27rem;
+            color: gray;
+        }
+        #p31{
+          height: 1rem;
+          line-height: 1.2rem;
+            font-size: 0.4rem;
+            color: skyblue;
+        }
+        #p32{
+            font-size: 0.27rem;
+            color: gray;
+        }
+        #age{
+            clear: both;
+            width: 7.2rem;
+            height: 3rem;
+            padding-top: 10px ;
+            margin: auto;
+        }
+        #age img{
+            width: 7.2rem;
+            height: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <p id="p1">郑州</p>
+        <p class="fa fa-caret-down" id="p2"></p>
+        <!-- <i class="fa fa-search" id="i-advanced-search-i"></i> -->
+        <input class="user" type="search" placeholder="搜索商家、套餐、话题">
+        <div id="g1"><img src="g1.png" alt=""></div>
+        <div id="g2"> <img src="g2.png" alt=""></div>
+    </div>
+    <div class="layui-carousel" id="test1">
+        <div carousel-item id="ing">
+            <div><img src="ln1.jpg" alt=""></div>
+            <div><img src="ln2.jpg" alt=""></div>
+            <div><img src="ln1.jpg" alt=""></div>
+            <div><img src="ln2.jpg" alt=""></div>
+            <div><img src="ln1.jpg" alt=""></div>
+        </div>
+    </div>
+    <div id="secend">
+        <div><img src="j1.png" alt="">
+            <p>找商家</p>
+        </div>
+        <div><img src="j3.png" alt="">
+            <p>备婚清单</p>
+        </div>
+        <div><img src="j2.png" alt="">
+            <p>电子请帖</p>
+        </div>
+        <div><img src="j4.png" alt="">
+            <p>结婚任务</p>
+        </div>
+    </div>
+    <div id="left">
+        <p id="p11">婚品采购</p>
+        <p id="p12">婚纱礼服 喜糖 请帖</p>
+        <img src="l1.png" alt="">
+    </div>
+    <div id="right">
+        <div id="top">
+            <img src="l2.png" alt="">
+            <p id="p21">婚车租凭</p>
+            <p id="p22">全城最低，买贵退钱</p>
+        </div>
+        <div id="btm">
+            <img src="l3.png" alt="">
+            <p id="p31">全球旅拍</p>
+            <p id="p32">机票+酒店+拍摄</p>
+        </div>
+    </div>
+    <div id="age">
+<img src="ag1.png" alt="">
+    </div>
+</body>
+<script src="layui/layui.all.js"></script>
+<script>
+    layui.use('carousel', function () {
+        var carousel = layui.carousel;
+        //建造实例
+        carousel.render({
+            elem: '#test1'
+            , width: '7.5rem',
+            height: '4rem' //设置容器宽度
+            , arrow: 'always' //始终显示箭头
+            //,anim: 'updown' //切换动画方式
+        });
+    });
+</script>
+
+</html>
